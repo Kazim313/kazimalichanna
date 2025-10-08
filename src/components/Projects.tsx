@@ -41,7 +41,7 @@ const Projects = () => {
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Development{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Projects
@@ -70,7 +70,7 @@ const Projects = () => {
                   {project.technologies.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-muted text-foreground text-xs rounded-full border border-border"
+                      className="px-3 py-1 bg-muted text-foreground text-xs rounded-full border border-border hover:bg-primary hover:text-white hover:border-primary hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
                     >
                       {tech}
                     </span>

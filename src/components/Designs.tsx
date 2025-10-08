@@ -37,7 +37,7 @@ const Designs = () => {
     <section id="designs" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             UI/UX Design{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Portfolio
@@ -66,7 +66,7 @@ const Designs = () => {
                   {design.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-2 py-1 bg-muted text-foreground text-xs rounded-full border border-border"
+                      className="px-2 py-1 bg-muted text-foreground text-xs rounded-full border border-border hover:bg-primary hover:text-white hover:border-primary hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
                     >
                       {tag}
                     </span>

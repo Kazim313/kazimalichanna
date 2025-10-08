@@ -42,13 +42,13 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-display font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Kazim Ali
               </span>
             </h1>
-            <div className="text-2xl md:text-3xl text-muted-foreground mb-8 h-12 flex items-center justify-center md:justify-start">
+            <div className="text-xl md:text-2xl text-muted-foreground mb-8 h-12 flex items-center justify-center md:justify-start">
               <span className="font-medium border-r-2 border-primary pr-2 animate-blink">
                 {displayText}
               </span>
@@ -86,7 +86,7 @@ const HeroSection = () => {
 
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-scale-in">
-            <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="relative w-56 h-56 md:w-72 md:h-72">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse"></div>
               <img
                 src={profileImage}
