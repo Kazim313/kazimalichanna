@@ -1,10 +1,15 @@
 import { Vote, Building2, Cloud, MessageSquare } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import evotingImage from "@/assets/project-evoting.jpg";
+import hostelImage from "@/assets/project-hostel.jpg";
+import cloudImage from "@/assets/project-cloud.jpg";
+import quotesImage from "@/assets/project-quotes.jpg";
 
 const Projects = () => {
   const projects = [
     {
       icon: Vote,
+      image: evotingImage,
       title: "Blockchain-based E-Voting System",
       subtitle: "Final Year Project",
       description:
@@ -13,6 +18,7 @@ const Projects = () => {
     },
     {
       icon: Building2,
+      image: hostelImage,
       title: "Hostel Management System",
       subtitle: "Java Desktop Application",
       description:
@@ -21,6 +27,7 @@ const Projects = () => {
     },
     {
       icon: Cloud,
+      image: cloudImage,
       title: "Cloud-Based File Storage & Sharing System",
       subtitle: "Full-Stack Web Application",
       description:
@@ -29,6 +36,7 @@ const Projects = () => {
     },
     {
       icon: MessageSquare,
+      image: quotesImage,
       title: "Daily Quote Notification App",
       subtitle: "Android Application",
       description:
@@ -57,11 +65,18 @@ const Projects = () => {
               className="group border-border/50 hover:border-primary/50 hover:shadow-card transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardContent className="p-8">
-                <div className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <project.icon className="h-8 w-8 text-primary" />
+              <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center">
+                  <project.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-sm text-primary mb-3">{project.subtitle}</p>

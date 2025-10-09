@@ -1,11 +1,15 @@
 import { ExternalLink, Vote, Briefcase, School } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import evotingDesign from "@/assets/design-evoting.jpg";
+import jobPortalDesign from "@/assets/design-jobportal.jpg";
+import schoolDesign from "@/assets/design-school.jpg";
 
 const Designs = () => {
   const designs = [
     {
       icon: Vote,
+      image: evotingDesign,
       title: "E-Voting System UI",
       client: "SISC IBA",
       description:
@@ -15,6 +19,7 @@ const Designs = () => {
     },
     {
       icon: Briefcase,
+      image: jobPortalDesign,
       title: "Job Portal UI",
       client: "Community Template",
       description:
@@ -24,6 +29,7 @@ const Designs = () => {
     },
     {
       icon: School,
+      image: schoolDesign,
       title: "School Management System UI",
       client: "Community Template",
       description:
@@ -38,9 +44,9 @@ const Designs = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            UI/UX Design{" "}
+            UI/UX{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Portfolio
+              Designs
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
@@ -53,11 +59,18 @@ const Designs = () => {
               className="group border-border/50 hover:border-primary/50 hover:shadow-card transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardContent className="p-8">
-                <div className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <design.icon className="h-8 w-8 text-primary" />
+              <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <img 
+                  src={design.image} 
+                  alt={design.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center">
+                  <design.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
                   {design.title}
                 </h3>
                 <p className="text-sm text-primary mb-3">{design.client}</p>
