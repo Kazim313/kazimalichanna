@@ -39,7 +39,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 py-24 relative z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16">
           {/* Text Content */}
           <div className="flex-1 text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
@@ -85,7 +85,7 @@ const HeroSection = () => {
           </div>
 
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-scale-in">
+          <div className="flex-shrink-0 animate-scale-in md:mr-8">
             <div className="relative w-56 h-56 md:w-72 md:h-72">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse"></div>
               <img
