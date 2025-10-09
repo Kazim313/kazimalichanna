@@ -6,6 +6,7 @@ import cloudImage from "@/assets/project-cloud.jpg";
 import quotesImage from "@/assets/project-quotes.jpg";
 
 const Projects = () => {
+  // Development projects showcase
   const projects = [
     {
       icon: Vote,
