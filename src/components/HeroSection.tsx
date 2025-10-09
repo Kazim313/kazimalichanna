@@ -29,7 +29,7 @@ const HeroSection = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        background: "var(--gradient-hero)",
+        background: "linear-gradient(135deg, hsl(222 70% 15%) 0%, hsl(230 60% 8%) 50%, hsl(222 65% 5%) 100%)",
       }}
     >
       {/* Animated Background Elements */}
