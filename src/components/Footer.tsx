@@ -71,11 +71,11 @@ const Footer = () => {
           </div>
 
           {/* Footer Bottom */}
-          <div className="text-center pt-8 border-t border-border">
+          {/* <div className="text-center pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
               Made with <Heart className="h-4 w-4 text-red-500 fill-red-500 animate-pulse" /> by Kazim Ali © 2025
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
